@@ -12,9 +12,15 @@ For example: main.py --days=3
 
 output:
 
-2019-01-24
-average temperature: 15.0(c)
-2019-01-25
-average temperature: 15.0(c)
-2019-01-26
-average temperature: 14.0(c)
+  2019-01-24
+  
+  average temperature: 15.0(c)
+  
+  2019-01-25
+  
+  average temperature: 15.0(c)
+  
+  2019-01-26
+  
+  average temperature: 14.0(c)
+  
