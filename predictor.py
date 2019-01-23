@@ -4,7 +4,6 @@ import warnings
 from sklearn import preprocessing
 from sklearn.linear_model import LinearRegression
 
-
 warnings.filterwarnings(action="ignore", module="sklearn", message="^internal gelsd")
 
 

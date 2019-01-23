@@ -49,7 +49,8 @@ def fix_db():
         if len(d["date"]) != 8:
             a.collection.delete_one({"date": d["date"]})
         if "season_association" not in d:
-            a.collection.update({"_id": ObjectId(d["_id"])}, {"$set": {"season_association": get_season_association(d["date"])}})
+            a.collection.update({"_id": ObjectId(d["_id"])},
+                                {"$set": {"season_association": get_season_association(d["date"])}})
 
 
 def convert_date_to_day_in_year(date):
@@ -190,8 +191,3 @@ class DataCollector(object):
                 print "Inserting %d recordings to DB" % len(documents)
                 self.db.insert_many(documents)  # adds what left
         fix_db()
-
-
-if __name__ == '__main__':
-    a = DataCollector()
-    a.fetch_data_to_db()

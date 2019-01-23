@@ -1,5 +1,6 @@
 from data_collector import DataCollector
 
+
 def create_datasets():
     dataset = [["date", "min_temp", "max_temp", "avg_temp", "season_association"]]
     collector = DataCollector()
